@@ -36,13 +36,13 @@
         }
     }
     .chatbox-btn {
-        border-radius: 50%;
-        border: 1px solid white;
+        // border-radius: 50%;
+        // border: 1px solid white;
         color: white;
         cursor: pointer;
         display: inline-block;
         float: right;
-        font-size: $box-close-font-size;
+        // font-size: $box-close-font-size;
         margin: 0;
         margin-right: 0.2em;
         padding: 0.5em 0.5em 0.3em 0.5em;
@@ -94,8 +94,8 @@
             border-bottom-right-radius: $chatbox-border-radius;
             border-top: 0;
             height: 289px;
-            height: -webkit-calc(100% - $chat-head-height);
-            height: calc(100% - $chat-head-height);
+            height: -webkit-calc(100% - #{$chat-head-height});
+            height: calc(100% - #{$chat-head-height});
             p {
                 color: $text-color;
                 font-size: $font-size;

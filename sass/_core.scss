@@ -24,7 +24,7 @@
 
     .no-text-select {
         -webkit-touch-callout: none;
-        @include user-select(none);
+        // @include user-select(none);
     }
     .emoticon {
         font-size: $font-size;
@@ -53,17 +53,17 @@
         padding-right: 22px;
     }
 
-    @include keyframes(spin) {
-        from {
-            @include transform(rotate(0deg));
-        }
-        to {
-            @include transform(rotate(359deg));
-        }
-    }
+    // @include keyframes(spin) {
+    //     from {
+    //         @include transform(rotate(0deg));
+    //     }
+    //     to {
+    //         @include transform(rotate(359deg));
+    //     }
+    // }
 
     .spinner {
-        @include animation(spin 2s infinite, linear);
+        // @include animation(spin 2s infinite, linear);
         display: block;
         text-align: center;
         margin: 5px;
@@ -74,17 +74,17 @@
         }
     }
 
-    .button-group,
-    .input-button-group {
-        display: table;
-    }
-    .button-group {
-        width: 100%;
-    }
-    .input-button-group button,
-    .input-button-group input {
-        display: table-cell;
-    }
+    // .button-group,
+    // .input-button-group {
+    //     display: table;
+    // }
+    // .button-group {
+    //     width: 100%;
+    // }
+    // .input-button-group button,
+    // .input-button-group input {
+    //     display: table-cell;
+    // }
 
     .error {
         color: red;
@@ -117,21 +117,21 @@
     .activated {
         display: block !important;
     }
-    .pure-button {
-        border-radius: $chatbox-border-radius;
-    }
-    .button-primary {
-        color: white;
-        background-color: $primary-color;
-    }
-    .button-secondary {
-        color: white;
-        background-color: $secondary-color;
-    }
-    .button-cancel {
-        color: white;
-        background-color: $warning-color;
-    }
+    // .pure-button {
+    //     border-radius: $chatbox-border-radius;
+    // }
+    // .button-primary {
+    //     color: white;
+    //     background-color: $primary-color;
+    // }
+    // .button-secondary {
+    //     color: white;
+    //     background-color: $secondary-color;
+    // }
+    // .button-cancel {
+    //     color: white;
+    //     background-color: $warning-color;
+    // }
 
     form {
         &.pure-form.converse-form {

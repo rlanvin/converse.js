@@ -29,8 +29,8 @@
             width: $chatroom-width;
             .chatroom-body {
                 height: 289px;
-                height: -webkit-calc(100% - $chat-head-height);
-                height: calc(100% - $chat-head-height);
+                height: -webkit-calc(100% - #{$chat-head-height});
+                height: calc(100% - #{$chat-head-height});
                 border-bottom-left-radius:$chatbox-border-radius;
                 border-bottom-right-radius: $chatbox-border-radius;
                 background-color: white;
@@ -102,8 +102,8 @@
                     color: $text-color;
                     font-size: $font-size;
                     height: 289px;
-                    height: -webkit-calc(100% - $chat-head-height);
-                    height: calc(100% - $chat-head-height);
+                    height: -webkit-calc(100% - #{$chat-head-height});
+                    height: calc(100% - #{$chat-head-height});
                     overflow-y: auto;
                     position: absolute;
                 }
