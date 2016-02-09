@@ -68,3 +68,8 @@ $box-close-button-padding-bottom: 4px !default;
 $box-close-button-padding-left: 4px !default;
 $box-close-button-padding-right: 4px !default;
 // $box-close-font-size: 9px !default;
+
+$online-color: $link-color !default;
+$dnd-color: desaturate($online-color, 50%) !default;
+$away-color: desaturate($online-color, 50%) !default;
+$offline-color: #ccc !default;

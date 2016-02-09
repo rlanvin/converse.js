@@ -78,7 +78,6 @@
                         height: calc(100% - 70px);
                         overflow-x: hidden;
                         overflow-y: auto;
-                        list-style: none;
                         li {
                             cursor: default;
                             display: block;
@@ -101,11 +100,21 @@
                     border: 0;
                     color: $text-color;
                     font-size: $font-size;
+                    width: 100%;
                     height: 289px;
                     height: -webkit-calc(100% - #{$chat-head-height});
                     height: calc(100% - #{$chat-head-height});
                     overflow-y: auto;
                     position: absolute;
+                    form {
+                        padding: $chat-gutter;
+                        legend {
+                            // override bootstrap font-size for legend, which is too big
+                            font-size: $font-size;
+                            font-weight: bold;
+                            overflow: hidden;
+                        }
+                    }
                 }
             }
         }

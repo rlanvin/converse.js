@@ -97,6 +97,7 @@
         }
 
         #chatrooms {
+            padding: 2*$chat-gutter;
             form.add-chatroom {
                 input[type=button],
                 input[type=submit],
