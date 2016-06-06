@@ -54,8 +54,11 @@ dist/converse.min.js
 dist/converse.nojquery.js
 dist/converse.nojquery.min.js
 dist/converse-mobile.min.js
+dist/converse-custom.*
 
 css/converse.css.map
 css/converse.min.css
 
 .sv?
+.bower.json
+*.sublime-*
