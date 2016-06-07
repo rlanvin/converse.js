@@ -35,8 +35,8 @@
         // "strophe.rsm",
         // "strophe.vcard",
         // "strophe.ping",
-        "typeahead",
-        // "otr",
+        // "typeahead",
+        // "otr", // I have to keep this, otherwise for some reason jquery.browser is not added to the build
         // "underscore"
     ],
     wrap: {
