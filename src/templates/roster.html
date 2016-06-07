@@ -1,8 +1,9 @@
-<form class="pure-form roster-filter-group input-button-group">
-    <input value="{{filter_text}}" class="roster-filter"
+<form class="roster-filter-group input-button-group">
+    <div class="input-group">
+    <input value="{{filter_text}}" class="roster-filter form-control"
            placeholder="{{placeholder}}"
            {[ if (filter_type === 'state') { ]}  style="display: none" {[ } ]} >
-    <select class="state-type" {[ if (filter_type !== 'state') { ]}  style="display: none" {[ } ]} >
+    <select class="state-type form-control" {[ if (filter_type !== 'state') { ]}  style="display: none" {[ } ]} >
         <option value="">{{label_any}}</option>
         <option {[ if (chat_state === 'online') { ]} selected="selected" {[ } ]}
             value="online">{{label_online}}</option>
@@ -17,7 +18,7 @@
         <option {[ if (chat_state === 'offline') { ]} selected="selected" {[ } ]}
             value="offline">{{label_offline}}</option>
     </select>
-    <select class="filter-type">
+    <select class="filter-type form-control">
         <option {[ if (filter_type === 'contacts') { ]} selected="selected" {[ } ]}
                 value="contacts">{{label_contacts}}</option>
         <option {[ if (filter_type === 'groups') { ]} selected="selected" {[ } ]}
@@ -25,4 +26,5 @@
         <option {[ if (filter_type === 'state') { ]} selected="selected" {[ } ]}
                 value="state">{{label_state}}</option>
     </select>
+</div>
 </form>

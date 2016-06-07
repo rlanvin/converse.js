@@ -38,8 +38,10 @@
             }
             .chatroom-body {
                 height: 289px;
-                @include border-bottom-radius($chatbox-border-radius);
-                @include calc(height, '100% - #{$chat-head-height}');
+                height: -webkit-calc(100% - #{$chat-head-height});
+                height: calc(100% - #{$chat-head-height});
+                border-bottom-left-radius:$chatbox-border-radius;
+                border-bottom-right-radius: $chatbox-border-radius;
                 background-color: white;
                 border-top: 0;
                 width: 100%;
@@ -85,6 +87,8 @@
                         overflow-x: hidden;
                         overflow-y: auto;
                         list-style: none;
+                        magin: 0;
+                        padding: 0;
                         li {
                             cursor: default;
                             display: block;
@@ -108,9 +112,19 @@
                     color: $text-color;
                     font-size: $font-size;
                     height: 289px;
-                    @include calc(height, '100% - #{$chat-head-height}');
+                    height: -webkit-calc(100% - #{$chat-head-height});
+                    height: calc(100% - #{$chat-head-height});
                     overflow-y: auto;
                     position: absolute;
+                    form {
+                        padding: $chat-gutter;
+                        legend {
+                            // override bootstrap font-size for legend, which is too big
+                            font-size: $font-size;
+                            font-weight: bold;
+                            overflow: hidden;
+                        }
+                    }
                 }
             }
         }

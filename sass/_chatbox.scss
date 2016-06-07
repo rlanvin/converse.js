@@ -56,13 +56,13 @@
         }
     }
     .chatbox-btn {
-        border-radius: 50%;
-        border: 1px solid white;
+        // border-radius: 50%;
+        // border: 1px solid white;
         color: white;
         cursor: pointer;
         display: inline-block;
         float: right;
-        font-size: $box-close-font-size;
+        // font-size: $box-close-font-size;
         margin: 0;
         margin-right: 0.2em;
         padding: 0.5em 0.5em 0.3em 0.5em;
@@ -131,7 +131,8 @@
             }
             border-top: 0;
             height: 289px;
-            @include calc(height, '100% - #{$chat-head-height}');
+            height: -webkit-calc(100% - #{$chat-head-height});
+            height: calc(100% - #{$chat-head-height});
             p {
                 color: $text-color;
                 font-size: $font-size;
@@ -197,6 +198,7 @@
             background-color: #ffffff;
             line-height: 1.3em;
             height: 206px;
+            height: -webkit-calc(100% - #{$toolbar-height + $chat-textarea-height +1px});
             height: calc(100% - #{$toolbar-height + $chat-textarea-height +1px});
         }
 
@@ -211,7 +213,8 @@
         form.sendXMPPMessage {
             -moz-background-clip: padding;
             -webkit-background-clip: padding-box;
-            @include border-bottom-radius($chatbox-border-radius);
+            border-bottom-left-radius: $chatbox-border-radius;
+            border-bottom-right-radius: $chatbox-border-radius;
             background-clip: padding-box;
             background: white;
             border-top: 1px solid #BBB;
@@ -228,7 +231,8 @@
                 width: 100%;
             }
             .chat-textarea {
-                @include border-bottom-radius($chatbox-border-radius);
+                border-bottom-left-radius: $chatbox-border-radius;
+                border-bottom-right-radius: $chatbox-border-radius;
                 border: 0;
                 height: $chat-textarea-height;
                 padding: 0.5em;
